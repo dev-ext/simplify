@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+/*All libray style added in top of the main stylesheet*/
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+ audio:not([controls]) {
+ display: none;
+ height: 0;
+}
+ [hidden], template {
+ display: none;
+}
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+a { background: transparent; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+dfn { font-style: italic; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+mark { background: #ff0; color: #000; }
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) {
+ overflow: hidden;
+}
+figure { margin: 0; }
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+legend { border: 0; padding: 0; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+ -webkit-appearance: none;
+}
+ button::-moz-focus-inner, input::-moz-focus-inner {
+ border: 0;
+ padding: 0;
+}
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*End library*/
+
+/*
+Base: 7765626b69640d0a
+version:1
+
+*/
+.drw * { position:inherit !important; display:block !important; overflow:visible;}
+html, button, input, select, textarea { color: #222; }
+body { font-size: 1em; line-height: 1.4; }
+a { outline:none; transition:color 1s ease;}
+input{ outline:none;};
+::-moz-selection {
+ background: #b3d4fc;
+ text-shadow: none;
+}
+:focus { outline:none;}
+::selection { background: #b3d4fc; text-shadow: none; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+img { vertical-align: middle; }
+fieldset { border: 0; margin: 0; padding: 0; }
+textarea { resize: vertical; }
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; text-align:center; }
+h1,h2,h3,h4,h5,h6,p { margin-bottom:0;}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*
+	++++++++++++++++++
+	#Table of Content	
+	++++++++++++++++++
+	#Global CSS
+	#Layout
+	#Cms Area
+	#IE hack
+	
+*/
+
+
+/*
+##Start global css
+@@ Do not edit global css in the project revision stage
+*/
+
+/*push for margin*/
+.push-left-10 { margin-left:10px;}.push-left-15 { margin-left:15px;}.push-left-20 { margin-left:20px;}
+.push-left-25 { margin-left:25px;}.push-left-30 { margin-left:30px;}.push-left-35 { margin-left:35px;}
+.push-left-40 { margin-left:40px;}.push-left-45 { margin-left:45px;}.push-left-50 { margin-left:50px;}
+
+.push-right-10 { margin-right:10px;}.push-right-15 { margin-right:15px;}.push-right-20 { margin-right:20px;}
+.push-right-25 { margin-right:25px;}.push-right-30 { margin-right:30px;}.push-right-35 { margin-right:35px;}
+.push-right-40 { margin-right:40px;}.push-right-45 { margin-right:45px;}.push-right-50 { margin-right:50px;}
+
+.push-top-10 { margin-top:10px;}.push-top-15 { margin-top:15px;}.push-top-20 { margin-top:20px;}
+.push-top-25 { margin-top:25px;}.push-top-30 { margin-top:30px;}.push-top-35 { margin-top:35px;}
+.push-top-40 { margin-top:40px;}.push-top-45 { margin-top:45px;}.push-top-50 { margin-top:50px;}
+
+.push-bottom-10 { margin-bottom:10px;}.push-bottom-15 { margin-bottom:15px;}.push-bottom-20 { margin-bottom:20px;}
+.push-bottom-25 { margin-bottom:25px;}.push-bottom-30 { margin-bottom:30px;}.push-bottom-35 { margin-bottom:35px;}
+.push-bottom-40 { margin-bottom:40px;}.push-bottom-45 { margin-bottom:45px;}.push-bottom-50 { margin-bottom:50px;}
+/*ding for padding*/
+.ding-left-10 { padding-left:10px;}.ding-left-20 { padding-left:20px;}.ding-left-30 { padding-left:30px;}
+.ding-left-15 { padding-left:15px;}.ding-left-25 { padding-left:25px;}.ding-left-35 { padding-left:35px;}
+.ding-left-40 { padding-left:40px;}.ding-left-50 { padding-left:20px;}.ding-left-45 { padding-left:45px;}
+
+.ding-right-10 { padding-right:10px;}.ding-right-20 { padding-right:20px;}.ding-right-30 { padding-right:30px;}
+.ding-right-15 { padding-right:15px;}.ding-right-25 { padding-right:25px;}.ding-right-35 { padding-right:35px;}
+.ding-right-40 { padding-right:40px;}.ding-right-50 { padding-right:20px;}.ding-right-45 { padding-right:45px;}
+
+.ding-top-10 { padding-top:10px;}.ding-top-20 { padding-top:20px;}.ding-top-30 { padding-top:30px;}
+.ding-top-15 { padding-top:15px;}.ding-top-25 { padding-top:25px;}.ding-top-35 { padding-top:35px;}
+.ding-top-40 { padding-top:40px;}.ding-top-50 { padding-top:20px;}.ding-top-45 { padding-top:45px;}
+
+.ding-bottom-10 { padding-bottom:10px;}.ding-bottom-20 { padding-bottom:20px;}.ding-bottom-30 { padding-bottom:30px;}
+.ding-bottom-15 { padding-bottom:15px;}.ding-bottom-25 { padding-bottom:25px;}.ding-bottom-35 { padding-bottom:35px;}
+.ding-bottom-40 { padding-bottom:40px;}.ding-bottom-50 { padding-bottom:20px;}.ding-bottom-45 { padding-bottom:45px;}
+
+/*alignleft and alignright*/
+.alignleft { float:left;}
+.alignright { float:right;}
+
+/*text-align*/
+.text-left { text-align:left;}
+.text-right { text-align:right;}
+.text-justify{ text-align:justify;}
+.text-center { text-align:center;}
+/*Table concept row*/
+.row, .rowH, rowR { float:left; width:100%;}
+.rowH { overflow:hidden;}
+.rowR { position:relative;}
+.row-table { display:table-row;}
+
+/*Layout*/
+.base-width { width:960px;} .base-width2 { width:940px;}
+.centerAlign { margin:0 auto;}
+/*Declare global font*/
+body { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;}
+
+/* Form */
+.form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='phone'], .form textarea, .form select { width:150px; float:left; border:1px solid #ccc; box-shadow:0 0 3px #0FF inset; height:30px; border-radius:5px; color:#666; padding:5px 10px; margin:5px 0 0;}
+.form textarea { height:70px;}
+.form select { width:170px; height:40px; padding:10px 5px;}
+.form select option { background:#aaa; padding:5px; border:1px solid #000;}
+
+.form label{ font-weight:700; float:left; min-width:100px; margin:5px 0 0; padding-top:7px; clear:left;}
+.form input:focus { box-shadow:0 0 3px #000 inset;}
+
+/* Table */
+.table th { font-weight:700; background:#ccc; text-align:left; padding:5px 10px; border:1px solid #ccc; border-collapse:collapse;}
+.table td{ border-collapse:collapse; border:1px solid #ccc; text-align:left; padding:5px 10px;}
+.table tr:hover td{ background:#ccc; cursor:pointer;}
+/*
+##End global css
+*/
+
+/*
+----------------------------------------
+		  Layout	
+----------------------------------------
+*/
+/*
+	Header
+*/
+.main-header {}
+ 
+/*
+	+++++++
+	Content Layout
+	+++++++
+*/
+.two-column .main-column{ width:70%;}
+.sidebar { width:28%;}
+
+
+/*
+Footer
+*/
+.main-footer {}
+
+/*
+	#Cms Area
+*/
+.entry p{ font:14px/18px Arial, Helvetica, sans-serif; color:#000; margin:10px 0 0;}
+.entry ul { margin:10px 0 0 25px; padding:0; list-style-type:disc;}
+.entry li { font:14px/18px Arial, Helvetica, sans-serif;}
+.entry ul li { margin:0; padding:3px 0 0;}
+.entry img.alignleft { margin:15px 15px 0 0;}
+.entry img.alignright { margin:15px 0 0 15px;}
+/*
+	footer
+*/
+.footer {}
+
+/*
+	#IE hack. use media query.
+*/
+.ie .round { behavior: url('pie.htc');}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+/*
+If you want to add Responsive style your project just copy this stylesheet and add at the end of main stylesheet.
+Or link this stylesheet after main stylesheet but it is not recomended. Because it genarates one more http request.
+
+=================================================
+            ## Responsive Style
+=================================================
+*/
+/*
+Base: 7765626b69640d0a
+version:1
+
+*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen  
+and (max-width : 767px) {
+.desktop, .ipad { display:none;}
+.mobile { display:block;}
+img { max-width:100%; height:auto;}
+.base-width { max-width:300px; width:auto;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1023px) {
+.desktop, .mobile { display:none;}
+.ipad { display:block;}
+img { max-width:100%; height:auto;}
+.base-width { max-width:748px; width:748px; transition:width 2s ease;}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-pixel-ratio : 1.5),
+only screen and (min-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
