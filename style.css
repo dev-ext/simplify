@@ -194,8 +194,12 @@ body { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;}
 	Content Layout
 	+++++++
 */
+.content-layout {}
 .two-column .main-column{ width:70%;}
 .sidebar { width:28%;}
+.pageTitle {}
+
+.widget {}
 
 
 /*
