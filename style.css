@@ -142,7 +142,7 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 .text-justify{ text-align:justify;}
 .text-center { text-align:center;}
 /*Table concept row*/
-.row, .rowH, rowR { float:left; width:100%;}
+.row, .rowH, .rowR { float:left; width:100%;}
 .rowH { overflow:hidden;}
 .rowR { position:relative;}
 .row-table { display:table-row;}
