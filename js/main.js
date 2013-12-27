@@ -1,5 +1,5 @@
 // JavaScript Document
-//## Add jQuery library here to minify http request
+//## All site fuctionality javascript 
 
 
 // Avoid `console` errors in browsers that lack a console.
