@@ -11,16 +11,18 @@ Base: 7765626b69640d0a
 version:1
 
 */
-
+.desktop { display:block;}
+.mobile, .ipad , .hidden-on-desktop{ display:none;}
+.hidden-on-mobile, .hidden-on-ipad, .hidden-on-desktop {} 
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1023px) {
-.desktop, .mobile { display:none;}
+.desktop, .mobile, .hidden-on-ipad { display:none;}
 .ipad { display:block;}
 img { max-width:100%; height:auto;}
-.base-width { max-width:748px; width:748px; transition:width 2s ease;}
+.base-width { max-width:748px; width:748px; }
 }
 
 /* iPads (landscape) ----------- */
@@ -44,7 +46,7 @@ and (orientation : portrait) {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen  
 and (max-width : 767px) {
-.desktop, .ipad { display:none;}
+.desktop, .ipad, .hidden-on-mobile { display:none;}
 .mobile { display:block;}
 img { max-width:100%; height:auto;}
 .base-width { max-width:300px; width:auto;}
