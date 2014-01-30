@@ -92,7 +92,54 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 	#IE hack
 	
 */
+/*
+## 960 Grid System Modified
+*/
 
+/* =Containers
+--------------------------------------------------------------------------------*/
+.container_12
+{
+        margin-left: auto;
+        margin-right: auto;
+        width: 960px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+        display: inline;float: left;padding-left: 15px;padding-right: 15px;}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+.alpha {padding-left: 0;}
+.omega {padding-right: 0;}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+.container_12 .grid_1 {width: 50px;}
+.container_12 .grid_2 {width: 130px;}
+.container_12 .grid_3 {width: 210px;}
+.container_12 .grid_4 {width: 290px;}
+.container_12 .grid_5 {width: 370px;}
+.container_12 .grid_6 {width: 450px;}
+.container_12 .grid_7 {width: 530px;}
+.container_12 .grid_8 {width: 610px;}
+.container_12 .grid_9 {width: 690px;}
+.container_12 .grid_10 {width: 770px;}
+.container_12 .grid_11 {width: 850px;}
+.container_12 .grid_12 {width: 930px;}
 
 /*
 ##Start global css
