@@ -49,7 +49,7 @@ and (max-width : 767px) {
 .desktop, .ipad, .hidden-on-mobile { display:none;}
 .mobile { display:block;}
 img { max-width:100%; height:auto;}
-.base-width { max-width:300px; width:auto;}
+.base-width { max-width:480px; width:auto;}
 }
 
 /* Smartphones (landscape) ----------- */
