@@ -19,6 +19,56 @@ version:1
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 1023px) {
+/*
+## 960 Grid System Modified
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.container_12
+{
+        margin-left: auto;
+        margin-right: auto;
+        width: 738px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+        display: inline;float: left;padding-left: 1.56250%;padding-right: 1.56250%;}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+.alpha {padding-left: 0;}
+.omega {padding-right: 0;}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+.grid_1 {width: 5.20833%;}
+.grid_2 {width: 13.5417%;}
+.grid_3 {width: 21.8750%;}
+.grid_4 {width: 30.2083%;}
+.grid_5 {width: 38.5417%;}
+.grid_6 {width: 46.8750%;}
+.grid_7 {width: 55.2083%;}
+.grid_8 {width: 63.5417%;}
+.grid_9 {width: 71.8750%;}
+.grid_10 {width: 80.2083%;}
+.grid_11 {width: 88.5417%;}
+.grid_12 {width: 96.8750%;}
+
+	
 .desktop, .mobile, .hidden-on-ipad { display:none;}
 .ipad { display:block;}
 img { max-width:100%; height:auto;}
@@ -46,6 +96,57 @@ and (orientation : portrait) {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen  
 and (max-width : 767px) {
+/*
+## 960 Grid System Modified
+*/
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+.container_12
+{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+		max-width:450px;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+        display: inline;float: left;padding-left: 15px;padding-right: 15px;}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+.alpha {padding-left: 0;}
+.omega {padding-right: 0;}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+.grid_1 {width: 5.20833%;}
+.grid_2 {width: 13.5417%;}
+.grid_3 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_4 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_5 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_6 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_7 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_8 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_9 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_10 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_11 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
+.grid_12 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}	
+
+	
 .desktop, .ipad, .hidden-on-mobile { display:none;}
 .mobile { display:block;}
 img { max-width:100%; height:auto;}
