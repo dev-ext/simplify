@@ -11,9 +11,10 @@ Base: 7765626b69640d0a
 version:1
 
 */
-.desktop { display:block;}
+
 .mobile, .ipad , .hidden-on-desktop{ display:none;}
 .hidden-on-mobile, .hidden-on-ipad, .hidden-on-desktop {} 
+.desktop { display:block;}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
@@ -46,12 +47,9 @@ and (max-width : 1023px) {
 .grid_10,
 .grid_11,
 .grid_12 {
-        display: inline;float: left;padding-left: 1.56250%;padding-right: 1.56250%;}
+       padding-left: 1.56250%;padding-right: 1.56250%;}
 
-/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
---------------------------------------------------------------------------------*/
-.alpha {padding-left: 0;}
-.omega {padding-right: 0;}
+
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
@@ -70,7 +68,7 @@ and (max-width : 1023px) {
 
 	
 .desktop, .mobile, .hidden-on-ipad { display:none;}
-.ipad { display:block;}
+.ipad, .hidden-on-desktop, .hidden-on-mobile { display:block;}
 img { max-width:100%; height:auto;}
 .base-width { max-width:748px; width:748px; }
 }
@@ -124,12 +122,7 @@ and (max-width : 767px) {
 .grid_10,
 .grid_11,
 .grid_12 {
-        display: inline;float: left;padding-left: 15px;padding-right: 15px;}
-
-/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
---------------------------------------------------------------------------------*/
-.alpha {padding-left: 0;}
-.omega {padding-right: 0;}
+        padding-left: 15px;padding-right: 15px;}
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
@@ -148,7 +141,7 @@ and (max-width : 767px) {
 
 	
 .desktop, .ipad, .hidden-on-mobile { display:none;}
-.mobile { display:block;}
+.mobile, .hidden-on-desktop { display:block;}
 img { max-width:100%; height:auto;}
 .base-width { max-width:480px; width:auto;}
 }
