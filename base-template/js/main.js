@@ -42,15 +42,19 @@ require.config({
 });
 require(['jquery'], function(  ) {
    console.log("Jquery Load");
+   site.basic();
 });
 require(['plugin'], function(  ) {
-   console.log("Jquery Load");
+   console.log("Plugin Load");
 });
 
 
 /*
 	Dependent jquery.
 */
+var site = {};
+
+site.basic = function () {
 jQuery(document).ready(function() {
 console.log('jQuery Runing.');
 // Invoke to use chrome frame for IE 7 User
@@ -71,3 +75,4 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 devtool('create', 'UA-XXXX-Y', 'auto');
 devtool('send', 'pageview');
 /* end Google Analytic */
+}
