@@ -1,19 +1,4 @@
 // JavaScript Document
-
-/* Google Analytic */
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','devtool');
-
-devtool('create', 'UA-XXXX-Y', 'auto');
-devtool('send', 'pageview');
-/* end Google Analytic */
-
-
-//## All site fuctionality javascript 
-
-
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -37,6 +22,30 @@ devtool('send', 'pageview');
     }
 }());
 
+// Require js Object notation
+require.config({
+    baseUrl: 'js',
+    paths: {
+        // the left side is the module ID,
+        // the right side is the path to
+        // the jQuery file, relative to baseUrl.
+        // Also, the path should NOT include
+        // the '.js' file extension. This example
+        // is using jQuery 1.9.0 located at
+        // js/lib/jquery-1.9.0.js, relative to
+        // the HTML page.
+        jquery: 'vendor/jquery-1.10.2.min',
+		plugin: 'plugins',
+		modernizr: 'modernizr'
+		
+    }
+});
+require(['jquery'], function(  ) {
+   console.log("Jquery Load");
+});
+require(['plugin'], function(  ) {
+   console.log("Jquery Load");
+});
 
 
 /*
@@ -53,8 +62,12 @@ jQuery('.drw').removeClass('drw');
 
 });
 
+/* Google Analytic */
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','devtool');
 
-
-
-
-
+devtool('create', 'UA-XXXX-Y', 'auto');
+devtool('send', 'pageview');
+/* end Google Analytic */
