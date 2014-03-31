@@ -1,4 +1,5 @@
 // JavaScript Document
+var site = {};
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
@@ -25,34 +26,53 @@
 // Require js Object notation
 require.config({
     baseUrl: 'js',
-    paths: {
-        // the left side is the module ID,
-        // the right side is the path to
-        // the jQuery file, relative to baseUrl.
-        // Also, the path should NOT include
-        // the '.js' file extension. This example
-        // is using jQuery 1.9.0 located at
-        // js/lib/jquery-1.9.0.js, relative to
-        // the HTML page.
+    paths: {       
         jquery: 'vendor/jquery-1.10.2.min',
-		plugin: 'plugins',
-		modernizr: 'modernizr'
-		
+		cycle2:'vendor/jquery.cycle2.min',
+		wow:'vendor/wow.min',
+		modernizr: 'vendor/modernizr',
+		plugin: 'plugins'				
     }
 });
-require(['jquery'], function(  ) {
-   console.log("Jquery Load");
-   site.basic();
-});
-require(['plugin'], function(  ) {
-   console.log("Plugin Load");
+
+require(['jquery','modernizr','wow','cycle2'], function(  ) {
+	//complete function	
+	site.animate();
+    site.basic();   
+	
+	//site.analytic(); 
 });
 
+// animate css
+site.modload_test = function () {
+	Modernizr.load([
+					{
+					  load: '//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js',
+					  complete: function () {
+						if ( !window.jQuery ) {
+							  Modernizr.load('js/libs/jquery-1.7.1.min.js');
+						}
+					  }
+					},
+					{
+					  // This will wait for the fallback to load and
+					  // execute if it needs to.
+					  load: 'needs-jQuery.js'
+					}
+				  ]);	}
+site.animate = function () {
+	Modernizr.load([
+					{
+					  load: 'css/animate.min.css',
+					  complete: function () {
+						  console.log("css/animate.min.css loaded");						
+					  }
+					},
+					{					  
+					load: 'css/animate.min.css'
+					}
+				  ]);	}
 
-/*
-	Dependent jquery.
-*/
-var site = {};
 
 site.basic = function () {
 jQuery(document).ready(function() {
@@ -66,7 +86,9 @@ jQuery('.drw').removeClass('drw');
 
 });
 
-/* Google Analytic */
+}
+site.analytic = function () {
+	/* Google Analytic */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -75,4 +97,4 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 devtool('create', 'UA-XXXX-Y', 'auto');
 devtool('send', 'pageview');
 /* end Google Analytic */
-}
+	}
