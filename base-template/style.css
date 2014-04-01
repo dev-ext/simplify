@@ -119,12 +119,12 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 .grid_10,
 .grid_11,
 .grid_12 {
-        display: inline;float: left;padding-left: 15px;padding-right: 15px;}
+        display: inline;float: left;padgap-left: 15px;padgap-right: 15px;}
 
 /* =Grid >> Children (Alpha ~ First, Omega ~ Last)
 --------------------------------------------------------------------------------*/
-.alpha {padding-left: 0;}
-.omega {padding-right: 0;}
+.alpha {padgap-left: 0;}
+.omega {padgap-right: 0;}
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
@@ -163,25 +163,26 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 .push-bottom-25 { margin-bottom:25px;}.push-bottom-30 { margin-bottom:30px;}.push-bottom-35 { margin-bottom:35px;}
 .push-bottom-40 { margin-bottom:40px;}.push-bottom-45 { margin-bottom:45px;}.push-bottom-50 { margin-bottom:50px;}
 /*ding for padding*/
-.ding-left-10 { padding-left:10px;}.ding-left-20 { padding-left:20px;}.ding-left-30 { padding-left:30px;}
-.ding-left-15 { padding-left:15px;}.ding-left-25 { padding-left:25px;}.ding-left-35 { padding-left:35px;}
-.ding-left-40 { padding-left:40px;}.ding-left-50 { padding-left:20px;}.ding-left-45 { padding-left:45px;}
+.gap-left-10 { padgap-left:10px;}.gap-left-20 { padgap-left:20px;}.gap-left-30 { padgap-left:30px;}
+.gap-left-15 { padgap-left:15px;}.gap-left-25 { padgap-left:25px;}.gap-left-35 { padgap-left:35px;}
+.gap-left-40 { padgap-left:40px;}.gap-left-50 { padgap-left:20px;}.gap-left-45 { padgap-left:45px;}
 
-.ding-right-10 { padding-right:10px;}.ding-right-20 { padding-right:20px;}.ding-right-30 { padding-right:30px;}
-.ding-right-15 { padding-right:15px;}.ding-right-25 { padding-right:25px;}.ding-right-35 { padding-right:35px;}
-.ding-right-40 { padding-right:40px;}.ding-right-50 { padding-right:20px;}.ding-right-45 { padding-right:45px;}
+.gap-right-10 { padgap-right:10px;}.gap-right-20 { padgap-right:20px;}.gap-right-30 { padgap-right:30px;}
+.gap-right-15 { padgap-right:15px;}.gap-right-25 { padgap-right:25px;}.gap-right-35 { padgap-right:35px;}
+.gap-right-40 { padgap-right:40px;}.gap-right-50 { padgap-right:20px;}.gap-right-45 { padgap-right:45px;}
 
-.ding-top-10 { padding-top:10px;}.ding-top-20 { padding-top:20px;}.ding-top-30 { padding-top:30px;}
-.ding-top-15 { padding-top:15px;}.ding-top-25 { padding-top:25px;}.ding-top-35 { padding-top:35px;}
-.ding-top-40 { padding-top:40px;}.ding-top-50 { padding-top:20px;}.ding-top-45 { padding-top:45px;}
+.gap-top-10 { padgap-top:10px;}.gap-top-20 { padgap-top:20px;}.gap-top-30 { padgap-top:30px;}
+.gap-top-15 { padgap-top:15px;}.gap-top-25 { padgap-top:25px;}.gap-top-35 { padgap-top:35px;}
+.gap-top-40 { padgap-top:40px;}.gap-top-50 { padgap-top:20px;}.gap-top-45 { padgap-top:45px;}
 
-.ding-bottom-10 { padding-bottom:10px;}.ding-bottom-20 { padding-bottom:20px;}.ding-bottom-30 { padding-bottom:30px;}
-.ding-bottom-15 { padding-bottom:15px;}.ding-bottom-25 { padding-bottom:25px;}.ding-bottom-35 { padding-bottom:35px;}
-.ding-bottom-40 { padding-bottom:40px;}.ding-bottom-50 { padding-bottom:20px;}.ding-bottom-45 { padding-bottom:45px;}
+.gap-bottom-10 { padgap-bottom:10px;}.gap-bottom-20 { padgap-bottom:20px;}.gap-bottom-30 { padgap-bottom:30px;}
+.gap-bottom-15 { padgap-bottom:15px;}.gap-bottom-25 { padgap-bottom:25px;}.gap-bottom-35 { padgap-bottom:35px;}
+.gap-bottom-40 { padgap-bottom:40px;}.gap-bottom-50 { padgap-bottom:20px;}.gap-bottom-45 { padgap-bottom:45px;}
 
 /*alignleft and alignright*/
 .alignleft { float:left;}
 .alignright { float:right;}
+.aligncenter { display:block; margin:0 auto;}
 
 /*text-align*/
 .text-left { text-align:left;}
@@ -201,13 +202,13 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 body { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;}
 
 /* Form */
-.form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='phone'], .form textarea, .form select { width:150px; float:left; border:1px solid #ccc; box-shadow:0 0 3px #0FF inset; height:30px; border-radius:5px; color:#666; padding:5px 10px; margin:5px 0 0;}
-.form textarea { height:70px;}
-.form select { width:170px; height:40px; padding:10px 5px;}
-.form select option { background:#aaa; padding:5px; border:1px solid #000;}
+.sim-form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='phone'], .form textarea, .form select { width:150px; float:left; border:1px solid #ccc; box-shadow:0 0 3px #0FF inset; height:30px; border-radius:5px; color:#666; padding:5px 10px; margin:5px 0 0;}
+.sim-form textarea { height:70px;}
+.sim-form select { width:170px; height:40px; padding:10px 5px;}
+.sim-form select option { background:#aaa; padding:5px; border:1px solid #000;}
 
-.form label{ font-weight:700; float:left; min-width:100px; margin:5px 0 0; padding-top:7px; clear:left;}
-.form input:focus { box-shadow:0 0 3px #000 inset;}
+.sim-form label{ font-weight:700; float:left; min-width:100px; margin:5px 0 0; padgap-top:7px; clear:left;}
+.sim-form input:focus { box-shadow:0 0 3px #000 inset;}
 
 /* Table */
 .table th { font-weight:700; background:#ccc; text-align:left; padding:5px 10px; border:1px solid #ccc; border-collapse:collapse;}

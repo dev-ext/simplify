@@ -1,5 +1,3 @@
-// JavaScript Document
-
 // add resizeEnd event
 jQuery(window).resize(function() {
         if(this.resizeTO) clearTimeout(this.resizeTO);

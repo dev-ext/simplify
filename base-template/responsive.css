@@ -8,7 +8,7 @@ Or link this stylesheet after main stylesheet but it is not recomended. Because 
 */
 /*
 Base: 7765626b69640d0a
-version:1
+version:1.9
 
 */
 
@@ -46,8 +46,7 @@ and (max-width : 1023px) {
 .grid_9,
 .grid_10,
 .grid_11,
-.grid_12 {
-       padding-left: 1.56250%;padding-right: 1.56250%;}
+.grid_12 { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
 
 
 
@@ -121,29 +120,27 @@ and (max-width : 767px) {
 .grid_9,
 .grid_10,
 .grid_11,
-.grid_12 {
-        padding-left: 15px;padding-right: 15px;}
+.grid_12 { box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
 .grid_1 {width: 5.20833%;}
 .grid_2 {width: 13.5417%;}
-.grid_3 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_4 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_5 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_6 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_7 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_8 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_9 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_10 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_11 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}
-.grid_12 {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}	
-
-	
+.grid_3,
+.grid_4,
+.grid_5 ,
+.grid_6 ,
+.grid_7,
+.grid_8 ,
+.grid_9,
+.grid_10,
+.grid_11 ,
+.grid_12 
+ {width: 100%; box-sizing:border-box; -moz-box-sizing:border-box;}	
 .desktop, .ipad, .hidden-on-mobile { display:none;}
 .mobile, .hidden-on-desktop { display:block;}
 img { max-width:100%; height:auto;}
-.base-width { max-width:480px; width:auto;}
+.base-width { max-width:480px; width:auto; padding:0 15px;}
 }
 
 /* Smartphones (landscape) ----------- */
