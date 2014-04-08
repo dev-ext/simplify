@@ -25,19 +25,17 @@ var site = {};
 
 // Require js Object notation
 require.config({
-   // baseUrl: 'js',
+    baseUrl: 'js',
     paths: {       
-        jquery: 'lib/jquery-1.10.2.min',
-		modernizr: 'lib/modernizr',
-		underscore: 'lib/underscore-min',
-		cycle2:'lib/jquery.cycle2.min',
-		move:'lib/move.min',
-		wow:'lib/wow.min',		
-		fly: 'fly'				
+        jquery: 'vendor/jquery-1.10.2.min',
+		cycle2:'vendor/jquery.cycle2.min',
+		wow:'vendor/wow.min',
+		modernizr: 'vendor/modernizr',
+		plugin: 'plugins'				
     }
 });
 
-require(['jquery','modernizr','cycle2'], function(  ) {
+require(['jquery','modernizr','wow','cycle2'], function(  ) {
 	//complete function	
 	site.animate();
     site.basic();   

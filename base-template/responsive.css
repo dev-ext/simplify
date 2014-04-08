@@ -52,18 +52,18 @@ and (max-width : 1023px) {
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
-.grid_1 {width: 5.20833%;}
-.grid_2 {width: 13.5417%;}
-.grid_3 {width: 21.8750%;}
-.grid_4 {width: 30.2083%;}
-.grid_5 {width: 38.5417%;}
-.grid_6 {width: 46.8750%;}
-.grid_7 {width: 55.2083%;}
-.grid_8 {width: 63.5417%;}
-.grid_9 {width: 71.8750%;}
-.grid_10 {width: 80.2083%;}
-.grid_11 {width: 88.5417%;}
-.grid_12 {width: 96.8750%;}
+.grid_1 {width: 34px;}
+.grid_2 {width: 98px;}
+.grid_3 {width: 162px;}
+.grid_4 {width: 226px;}
+.grid_5 {width: 290px;}
+.grid_6 {width: 354px;}
+.grid_7 {width: 418px;}
+.grid_8 {width: 482px;}
+.grid_9 {width: 546px;}
+.grid_10 {width: 610px;}
+.grid_11 {width: 674px;}
+.grid_12 {width: 738px;}
 
 	
 .desktop, .mobile, .hidden-on-ipad { display:none;}
@@ -124,8 +124,8 @@ and (max-width : 767px) {
 
 /* =Grid >> 12 Columns
 --------------------------------------------------------------------------------*/
-.grid_1 {width: 5.20833%;}
-.grid_2 {width: 13.5417%;}
+.grid_1 {width: 30%;}
+.grid_2 {width: 50%;}
 .grid_3,
 .grid_4,
 .grid_5 ,
