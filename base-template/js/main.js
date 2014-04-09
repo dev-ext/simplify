@@ -33,7 +33,7 @@ require.config({
 		cycle2:'lib/jquery.cycle2.min',
 		move:'lib/move.min',
 		wow:'lib/wow.min',		
-		fly: 'fly'				
+		plugins: 'plugins'				
     }
 });
 
