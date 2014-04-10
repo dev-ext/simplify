@@ -23,27 +23,7 @@ var site = {};
     }
 }());
 
-// Require js Object notation
-require.config({
-   // baseUrl: 'js',
-    paths: {       
-        jquery: 'lib/jquery-1.10.2.min',
-		modernizr: 'lib/modernizr',
-		underscore: 'lib/underscore-min',
-		cycle2:'lib/jquery.cycle2.min',
-		move:'lib/move.min',
-		wow:'lib/wow.min',		
-		plugins: 'plugins'				
-    }
-});
 
-require(['jquery','modernizr','cycle2'], function(  ) {
-	//complete function	
-	site.animate();
-    site.basic();   
-	
-	//site.analytic(); 
-});
 
 // animate css
 site.modload_test = function () {
