@@ -16,6 +16,33 @@ version:1.9
 .hidden-on-mobile, .hidden-on-ipad, .hidden-on-desktop {} 
 .desktop { display:block;}
 
+/* Larger screen*/
+@media only screen 
+and (min-width : 1200px) {
+.base-width { width:1200px;}	
+.container_12
+{  
+        width: 1200px;
+}
+	
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+.grid_1 {width: 70px;}
+.grid_2 {width: 170px;}
+.grid_3 {width: 270px;}
+.grid_4 {width: 370px;}
+.grid_5 {width: 470px;}
+.grid_6 {width: 570px;}
+.grid_7 {width: 670px;}
+.grid_8 {width: 770px;}
+.grid_9 {width: 870px;}
+.grid_10 {width: 970px;}
+.grid_11 {width: 1070px;}
+.grid_12 {width: 1170px;}
+
+	}
+
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen 
 and (min-width : 768px) 
