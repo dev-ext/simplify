@@ -153,7 +153,7 @@ h1,h2,h3,h4,h5,h6,p { margin-bottom:0; margin-top:10px;}
 body { font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000;}
 
 /* Form */
-.sim-form input[type='text'], .form input[type='email'], .form input[type='password'], .form input[type='phone'], .form textarea, .form select { width:150px; float:left; border:1px solid #ccc; box-shadow:0 0 3px #0FF inset; height:30px; border-radius:5px; color:#666; padding:5px 10px; margin:5px 0 0;}
+.sim-form input[type='text'], .sim-form input[type='email'], .sim-form input[type='password'], .sim-form input[type='phone'], .sim-form textarea, .sim-form select { width:150px; float:left; border:1px solid #ccc; box-shadow:0 0 3px #0FF inset; height:30px; border-radius:5px; color:#666; padding:5px 10px; margin:5px 0 0;}
 .sim-form textarea { height:70px;}
 .sim-form select { width:170px; height:40px; padding:10px 5px;}
 .sim-form select option { background:#aaa; padding:5px; border:1px solid #000;}
