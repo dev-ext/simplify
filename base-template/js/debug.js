@@ -11,7 +11,7 @@ if (s.h1.length=='' || s.h1.length==null || s.h1.length>1) {
 // check entry 
 s.entry = jQuery(".entry");
 if (s.entry.length=='' || s.entry.length==null || s.entry.length>1) {
-	console.log(s.entry.length,"Check HTML structure.");
+	console.log(s.entry.length,"Maybe .entry have a problem. Check HTML structure.");
 	}
 	
 	}
