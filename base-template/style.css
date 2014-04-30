@@ -220,10 +220,7 @@ Footer
 .entry ul li { margin:0; padding:3px 0 0;}
 .entry img.alignleft { margin:15px 15px 0 0;}
 .entry img.alignright { margin:15px 0 0 15px;}
-/*
-	footer
-*/
-.footer {}
+
 
 /*
 	#IE hack. use media query.
