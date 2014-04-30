@@ -1,0 +1,22 @@
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+
+# THANKS
+	http://html5boilerplate.com/
+	http://jquery.com/
+    http://fontello.com/
+	http://jquery.malsup.com/cycle2/
+	
+
+# TECHNOLOGY COLOPHON
+	## Software Used
+	Photoshop CS3
+	Dreamwever, Aptana studio
+	## HTMl Features
+	HTML 5 boilerplate
+	Fontello font Genarator 
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
