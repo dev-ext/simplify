@@ -168,6 +168,7 @@ and (max-width : 767px) {
 .mobile, .hidden-on-desktop { display:block;}
 img { max-width:100%; height:auto;}
 .base-width { max-width:480px; width:auto; padding:0 15px;}
+body { min-width:320px;}
 }
 
 /* Smartphones (landscape) ----------- */
